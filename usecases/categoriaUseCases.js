@@ -38,7 +38,7 @@ const updateCategoriaDB = async(body) =>{
     }
 }
 
-const deleteCategoriaBD = async(body) =>{
+const deleteCategoriaBD = async(codigo) =>{
     try{
        
         const results = await pool.query(`DELETE FROM categorias WHERE 
@@ -54,7 +54,7 @@ const deleteCategoriaBD = async(body) =>{
     }
 }
 
-const getCategoriaPorCodigoBD = async(body) =>{
+const getCategoriaPorCodigoBD = async(codigo) =>{
     try{
        
         const results = await pool.query(`SELECT * FROM  categorias WHERE 
