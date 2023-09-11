@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "9c898c23-dc5d-4b66-aa11-3d31f78887e4",
+		"name": "API eshop pw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29656046"
+	},
+	"item": [
+		{
+			"name": "get Categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"EletroDomesticos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 5,\r\n    \"nome\": \"alterado\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categoria/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categoria por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categoria/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
