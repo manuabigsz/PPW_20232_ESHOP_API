@@ -1,7 +1,6 @@
 {
   "name": "eshop_api_pw",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -18,5 +17,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "description": ""
 }
